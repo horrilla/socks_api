@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Учет носков</title>
+</head>
+<body>
+<div class="container">
+  <div class="socks-list">
+    <form action="../index.php">
+      <button type="submit" name="get-all-socks" id="getAll">Получить список всех носков</button>
+    </form>
+    <div class="socks-cards"></div>
+  </div>
+  <div class="socks-income">
+    <h2>Принять товар</h2>
+    <form action="../index.php" id="incomeSocks">
+      <label for="barCode">Шрихкод:</label>
+      <input type="text" name="barCode" id="barCode" maxlength="5" >
+      <label for="color">Цвет:</label>
+      <input type="text" name="color" id="color" >
+      <label for="cotton">Процент хлопка:</label>
+      <input type="text" name="cotton" id="cotton" >
+      <label for="quantity">Количество:</label>
+      <input type="text" name="quantity" id="quantity" >
+      <button type="submit" id="income">Принять</button>
+    </form>
+  </div>
+  <div class="socks-outcome">
+    <h2>Отпустить товар</h2>
+    <form action="../index.php" id="outcomeSocks">
+      <label for="outcomeBarCode">Шрихкод:</label>
+      <input type="text" name="barCode" id="outcomeBarCode" maxlength="5" >
+      <label for="color">Цвет:</label>
+      <input type="text" name="color" id="outcomeColor" >
+      <label for="cotton">Процент хлопка:</label>
+      <input type="text" name="cotton" id="outcomeCotton" >
+      <label for="quantity">Количество:</label>
+      <input type="text" name="quantity" id="outcomeQuantity">
+      <button type="submit" id="outcome">Отпустить</button>
+    </form>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

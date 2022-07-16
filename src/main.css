@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#getAll {
+    width: 200px;
+    height: 35px;
+    background-color: #5c5cf5;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#incomeSocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#outcomeSocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#income {
+    width: 100px;
+    height: 35px;
+    background-color: #5c5cf5;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#outcome {
+    width: 100px;
+    height: 35px;
+    background-color: #5c5cf5;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
